@@ -3,7 +3,7 @@ import pickle
 
 app = Flask(__name__)
 
-model_pickle = open("/Users/scaler/Documents/Shivank/FlaskMay/shiv/classifier.pkl", "rb")
+model_pickle = open("classifier.pkl", "rb")
 clf = pickle.load(model_pickle)
 
 @app.route("/")
